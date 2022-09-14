@@ -1,23 +1,29 @@
-import { createRouter, createWebHashHistory } from "vue-router"
-import Layout from '../layout/Layout.vue'
+import { createRouter, createWebHashHistory } from "vue-router";
+import Layout from "../layout/Layout.vue";
 const routes = [
-    {
-        path: '/adm',
-        component: Layout,
-        children: [
-            {
-                path: "home",
-                component: () => import('../pages/HomePage.vue'),
-                name: "home",
-                meta: { title: "home" }
-            }
-        ]
-    }
-]
+  {
+    path: "/admin",
+    component: Layout,
+    children: [
+      {
+        path: "",
+        component: () => import("../pages/HomePage.vue"),
+        name: "home",
+        meta: { title: "home" },
+      },
+      {
+        path: "user",
+        component: () => import("../pages/AboutPage.vue"),
+        name: "user",
+        meta: { title: "user" },
+      },
+    ],
+  },
+];
 
 const router = createRouter({
-    history: createWebHashHistory(),
-    routes
-})
+  history: createWebHashHistory(),
+  routes,
+});
 
 export default router;
