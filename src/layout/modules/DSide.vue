@@ -2,12 +2,12 @@
 <template>
   <div class="side-wrapper">
     <nav class="nav-wrapper">
-      <router-link to="/admin">홈 화면</router-link>
       <p class="nav-sectiontitle">관리</p>
-      <router-link to="/admin/user">유저</router-link>
-      <router-link to="/category">카테고리</router-link>
-      <router-link to="/hashtags">해시태그</router-link>
-      <router-link to="/service">서비스</router-link>
+      <router-link to="/admin/user">유저 관리</router-link>
+      <router-link to="/admin/category">카테고리 관리</router-link>
+      <router-link to="/admin/hashtag">해시태그 관리</router-link>
+      <router-link to="/admin/service">서비스 관리</router-link>
+      <router-link to="/admin/template">템플릿 관리</router-link>
       <p class="nav-sectiontitle">기타</p>
       <router-link to="/url">외부이동</router-link>
       <router-link to="/statistics">통계</router-link>
@@ -20,7 +20,6 @@
   min-width: 210px;
   height: 100%;
   padding: 10px;
-  transition: all 0.3s;
 }
 
 .side-wrapper .nav-wrapper {
@@ -30,11 +29,10 @@
 
 .nav-wrapper {
   height: 100%;
-  background: #fdfdfd;
+  background: #fff;
   border: 1px solid #e1e1e1;
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -53,14 +51,19 @@
 }
 
 .nav-wrapper a:hover {
-  color: navy;
-  font-weight: 800;
+  color: salmon;
 }
 
 .nav-sectiontitle {
   margin: 0;
   padding: 10px 0 10px 15px;
-  background: #e1e1e1;
+  background: #f1f1f1;
+  color: navy;
+  font-weight: 600;
   width: 100%;
+}
+
+.router-link-exact-active {
+  color: salmon;
 }
 </style>

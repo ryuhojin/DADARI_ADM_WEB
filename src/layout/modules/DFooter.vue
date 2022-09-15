@@ -14,6 +14,7 @@
     height: 30px;
     font-weight: 500;
     font-size: 13px;
-    border-top:1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    background: #fff;
 }
 </style>

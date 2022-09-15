@@ -19,8 +19,9 @@ import IconLogo from "../../components/core/icons/IconLogo.vue"
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #e1e1e1;
+    background: #fff;
     padding: 0 20px;
+    box-shadow: 2px 2px 1px #e1e1e1;
 }
 
 .logo-wrapper {

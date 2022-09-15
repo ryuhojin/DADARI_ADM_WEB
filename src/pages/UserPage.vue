@@ -2,5 +2,5 @@
 
 </script>
 <template>
-    <div>4444</div>
+    <div class="item-wrapper">4444</div>
 </template>
